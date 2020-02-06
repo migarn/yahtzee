@@ -15,7 +15,7 @@ public class Cast {
     }
 
     public Cast(Cast initialCast) {
-        // Konstruktor losujący wartości tylko dla kości oznaczonych do poprawy (z wartościami 0)
+        // Constructor, which sets random results only for dice assigned for revision (with result 0)
         this.castResults = new ArrayList<>();
         this.castResults.addAll(initialCast.getCastResults());
 
@@ -31,7 +31,7 @@ public class Cast {
     }
 
     public void setToCorrection(int index) {
-        // Rzutom przeznaczonym do poprawy nadaję wartość 0
+        // Casts assigned for revision will have result 0
         this.castResults.set(index - 1, 0);
     }
 
