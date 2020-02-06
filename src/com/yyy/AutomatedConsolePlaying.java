@@ -12,7 +12,7 @@ public class AutomatedConsolePlaying extends ManualConsolePlaying {
     public void takeTurn(Score score) {
         int trial = 1;
         Cast cast = new Cast(6);
-        System.out.println("\nRzut komputera:");
+        System.out.println("\nComputer's cast:");
         sleep();
         cast.print();
         sleep();
@@ -27,19 +27,19 @@ public class AutomatedConsolePlaying extends ManualConsolePlaying {
         else {
             int choice = decideIfCorrect(score, cast);
             if (choice == 1) {
-                System.out.println("\nKomputer powtarza rzuty.");
+                System.out.println("\nComputer has decided to repeat its cast.");
                 sleep();
                 trial++;
                 int figureToCorrection = chooseFigures(score, cast);
                 ArrayList<Integer> diceToCorrection = chooseDiceToCorrection(cast, figureToCorrection);
-                System.out.println("\nKomputer powtarza rzuty koścmi numer:");
+                System.out.println("\nComputer has decided to cast again following dice:");
 
                 for (int diceNumber : diceToCorrection) {
                     System.out.println(diceNumber);
                     cast.setToCorrection(diceNumber);
                 }
                 sleep();
-                System.out.println("\nPowtórzony rzut komputera:");
+                System.out.println("\nRepeated computer's cast:");
                 sleep();
                 Cast anotherCast = new Cast(cast);
                 anotherCast.print();
@@ -56,10 +56,10 @@ public class AutomatedConsolePlaying extends ManualConsolePlaying {
     protected void calculateScore(Score score, Cast cast) {
         int chosenFigure = chooseFigures(score, cast);
         String label = score.getLabels().get(chosenFigure - 1);
-        System.out.println("\nKomputer przydziela punkty figurom: " + label.toLowerCase());
+        System.out.println("\nComputer has assigned scores to following figures: " + label.toLowerCase());
         sleep();
         score.addScore(cast, chosenFigure);
-        System.out.println("\nWyniki komputera:");
+        System.out.println("\nComputer's score:");
         score.calculateScore();
         score.print();
         sleep();
