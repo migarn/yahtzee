@@ -9,8 +9,8 @@ public class ManualConsolePlaying implements PlayingMethod {
 
     public void takeTurn(Score score) {
         int trial = 1;
-        this.scanner.scanString("\nAby rzucić koścmi wpisz dowolny ciąg znaków i zatwierdź klawiszem ENTER.");
-        System.out.println("\nTwój rzut:");
+        this.scanner.scanString("\nTo cast the dice, please type anything and press ENTER.");
+        System.out.println("\nYour cast:");
         sleep();
         Cast cast = new Cast(6);
         cast.print();
@@ -53,16 +53,16 @@ public class ManualConsolePlaying implements PlayingMethod {
             calculateScore(score, cast);
         }
         else {
-            int choice = this.scanner.scanInt("\nWpisz:\n1 - aby powtórzyć rzuty\n2 - aby określić figury, którym będą przyznane punkty",1,2);
+            int choice = this.scanner.scanInt("\nType:\n1 - to repeat cast\n2 - to assign the figures to be scored",1,2);
             if (choice == 1) {
                 trial++;
-                int amountToCorrect = this.scanner.scanInt("\nPodaj ilość kości, których rzuty chcesz powtórzyć:",1,2,3,4,5,6);
+                int amountToCorrect = this.scanner.scanInt("\nType number of dice, for which cast will be repeated:",1,2,3,4,5,6);
 
                 for (int i = 0; i < amountToCorrect; i++) {
-                    int diceNumber = this.scanner.scanInt("\nPodaj numer kości, której rzut chcesz powtórzyć:",1,2,3,4,5,6);
+                    int diceNumber = this.scanner.scanInt("\nType index of dice, for which cast will be repeated:",1,2,3,4,5,6);
                     cast.setToCorrection(diceNumber);
                 }
-                System.out.println("\nTwój powtórzony rzut:");
+                System.out.println("\nYour repeated cast:");
                 sleep();
                 Cast anotherCast = new Cast(cast);
                 anotherCast.print();
@@ -76,9 +76,9 @@ public class ManualConsolePlaying implements PlayingMethod {
 
     protected void calculateScore(Score score, Cast cast) {
         int[] availableFigures = defineAvailableFigures(score);
-        int chosenFigure = this.scanner.scanInt("\nWybierz figury, którym chcesz porzydzielić punkty:" + printAvailableFigures(score),availableFigures);
+        int chosenFigure = this.scanner.scanInt("\nSelect figures to be scored:" + printAvailableFigures(score),availableFigures);
         score.addScore(cast, chosenFigure);
-        System.out.println("\nTwoje wyniki:");
+        System.out.println("\nYour score:");
         score.calculateScore();
         score.print();
     }
