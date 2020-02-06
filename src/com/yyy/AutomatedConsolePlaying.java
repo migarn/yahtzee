@@ -56,7 +56,7 @@ public class AutomatedConsolePlaying extends ManualConsolePlaying {
     protected void calculateScore(Score score, Cast cast) {
         int chosenFigure = chooseFigures(score, cast);
         String label = score.getLabels().get(chosenFigure - 1);
-        System.out.println("\nComputer has scored the following figures: " + label.toLowerCase());
+        System.out.println("\nComputer has scored following figures: " + label.toLowerCase());
         sleep();
         score.addScore(cast, chosenFigure);
         System.out.println("\nComputer's score:");
