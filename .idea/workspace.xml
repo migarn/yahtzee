@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70d721c2-9aaa-40ad-b84c-557238b56e4f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/yyy/AutomatedConsolePlaying.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yyy/AutomatedConsolePlaying.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/yyy/ManualConsolePlaying.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yyy/ManualConsolePlaying.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/yyy/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/yyy/Score.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/yyy/Score.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+            <state relative-caret-position="706">
+              <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -68,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/yyy/ManualConsolePlaying.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
+            <state relative-caret-position="1275">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
             </state>
           </provider>
         </entry>
@@ -108,10 +107,10 @@
         <option value="$PROJECT_DIR$/src/com/yyy/Player.java" />
         <option value="$PROJECT_DIR$/src/com/yyy/Game.java" />
         <option value="$PROJECT_DIR$/src/com/yyy/Cast.java" />
-        <option value="$PROJECT_DIR$/src/com/yyy/Score.java" />
         <option value="$PROJECT_DIR$/src/com/yyy/Main.java" />
         <option value="$PROJECT_DIR$/src/com/yyy/AutomatedConsolePlaying.java" />
         <option value="$PROJECT_DIR$/src/com/yyy/ManualConsolePlaying.java" />
+        <option value="$PROJECT_DIR$/src/com/yyy/Score.java" />
       </list>
     </option>
   </component>
@@ -154,7 +153,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581009521668" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581009687946" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -269,20 +268,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yyy/LoopingScanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/yyy/Score.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yyy/AutomatedConsolePlaying.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
@@ -292,8 +277,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yyy/ManualConsolePlaying.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
+        <state relative-caret-position="1275">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/yyy/LoopingScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/yyy/Score.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
         </state>
       </provider>
     </entry>

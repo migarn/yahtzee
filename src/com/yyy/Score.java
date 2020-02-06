@@ -58,14 +58,14 @@ public class Score {
 
     private void setLabels() {
         this.labels = new ArrayList<>();
-        this.labels.add("Jedynki");
-        this.labels.add("Dwójki");
-        this.labels.add("Trójki");
-        this.labels.add("Czwórki");
-        this.labels.add("Piątki");
-        this.labels.add("Szóstki");
+        this.labels.add("Aces");
+        this.labels.add("Twos");
+        this.labels.add("Threes");
+        this.labels.add("Fours");
+        this.labels.add("Fives");
+        this.labels.add("Sixes");
         this.labels.add("Bonus");
-        this.labels.add("Wynik");
+        this.labels.add("Score");
     }
 
     public void print() {
