@@ -11,26 +11,26 @@ public class Game {
 
     public void play() {
         for (int i = 1; i < 7; i++) {
-            System.out.println("\nTura gracza " + player1.getName() + ":");
+            System.out.println("\nTurn of " + player1.getName() + ":");
             this.player1.takeTurn();
-            System.out.println("\nTura gracza " + player2.getName() + ":");
+            System.out.println("\nTurn of " + player2.getName() + ":");
             this.player2.takeTurn();
             System.out.println("\n-----------------------");
-            System.out.println("\nWyniki po rundzie " + i + ":");
-            System.out.println("\nPunkty gracza " + player1.getName() + ":");
+            System.out.println("\nScores after round " + i + ":");
+            System.out.println("\nScores of " + player1.getName() + ":");
             player1.getScore().print();
-            System.out.println("\nPunkty gracza " + player2.getName() + ":");
+            System.out.println("\nScores of " + player2.getName() + ":");
             player2.getScore().print();
             System.out.println("\n-----------------------");
         }
         if (player1.getScore().getScores().get(7) > player2.getScore().getScores().get(7)) {
-            System.out.println("\nWygrywa gracz " + player1.getName() + "!");
+            System.out.println("\nPlayer " + player1.getName() + " wins!");
         }
         else if (player1.getScore().getScores().get(7) < player2.getScore().getScores().get(7)) {
-            System.out.println("\nWygrywa gracz " + player2.getName() + "!");
+            System.out.println("\nPlayer " + player2.getName() + " wins!");
         }
         else {
-            System.out.println("\nGra zakończyła się remisem.");
+            System.out.println("\nThe game ended in a draw.");
         }
     }
 }
