@@ -9,7 +9,7 @@ public class Score {
     public Score() {
         this.scores = new ArrayList<>();
 
-        // Domyślnie narzucam wszystkim kategoriom wartości -1, żeby odróżnić niepunktoweane kategorie od tych, którym przyznano 0 punktów
+        // -1 assigned everywhere, to distinguish unscored figures from scored with 0
         for (int i = 0; i < 8; i++) {
             this.scores.add(-1);
 
